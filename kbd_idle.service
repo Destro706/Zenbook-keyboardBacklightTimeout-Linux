@@ -1,0 +1,10 @@
+[Unit]
+Description=disable Keyboardbacklight when idle
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.config/keyboardBacklightTimeout
+ExecStart=%h/.config/keyboardBacklightTimeout/kbd_idle.sh
+
+[Install]
+WantedBy=default.target
